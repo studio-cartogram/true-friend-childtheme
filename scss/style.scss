@@ -1,11 +1,21 @@
-/*
-Theme Name: Cartogram
-Theme URI: http://www.studiocartogram.com
-Description: WordPress Theme for Cartogram
-Author: Matt Seccafien
-Author URI: http://www.studiocartogram.com
-Template: true-friend
-Version: 1.0
-*/
+/*------------------------------------*\
+    STYLE.CSS
+\*------------------------------------*/
+/**
+ *
+ * sass --watch style.scss:style.min.css --style compressed
+ *
+ * Here we pull in some variables, include the inuit.css framework, then add our
+ * project-specific components afterwards.
+ */
 
-@import "../../truefriend/scss/style.scss";
+	
+@charset "UTF-8";
+
+@import "vars";
+@import "../bower_components/inuit.css/inuit";
+@import "../../truefriend/scss/generic/grid";
+@import "../../truefriend/scss/generic/helper";
+@import "../../truefriend/scss/generic/mixins";
+
+@import "links";
